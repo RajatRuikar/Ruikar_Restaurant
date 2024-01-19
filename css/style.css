@@ -1,0 +1,255 @@
+/* Home */
+
+body {
+    background-color: rgba(248, 248, 248, 0.148);
+    background-image: url('img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0;
+}
+
+*{
+    color: rgb(249, 239, 226);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#img {
+    width: 80px;
+    float: right;
+    box-shadow: inset;
+}
+
+.Heading {
+    text-align: center;
+    background-color: #16151586;
+    font-size:large;
+    color: wheat;
+}
+
+.Heading :hover {
+    color: rgb(255, 255, 255);;
+}
+
+.navbar {
+    margin: 10px 2px;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.44) ;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    font-size: 20px;
+}
+
+.navbar a{
+    padding: 20px;
+    font-size: 26px;
+}
+
+.navbar .active{
+    background-color: #e28f139c;
+    color: rgba(0, 0, 0, 0.742);
+    border-radius: 15px;
+}
+
+.navbar a:hover {
+    background-color: #d883039c;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.form div img{
+    width: 25%;
+    padding-top: 15px;
+    margin: 0%;
+    border-radius: 3px;
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+    float: right;
+    opacity: 80%;
+}
+
+.form {
+    background-color:rgba(0, 0, 0, 0.533);
+    box-shadow: inset;
+    padding: 30px;
+    font-size: 30px;
+    padding-left: 100px;
+    border-style:groove;
+}
+
+.form input{
+    font-size: 27px;
+    background-color: #b28b8b6d;
+    color: rgb(255, 255, 255);
+    padding: 3px 12px;
+    margin-bottom: 10px ;
+}
+
+.form label{
+    font-weight:lighter;
+    color: rgb(239, 210, 164);
+}
+
+.form div{
+    margin: 8px;
+}
+
+.icon{
+    size: 10px;
+    width: 40px;
+    float: right;
+    padding-left: 15px;
+}
+
+.icon :hover{
+    size: 50px;
+    width: 100px;
+    box-shadow:black;
+}
+
+.iconposition {
+    padding-right: 10px;
+}
+
+.error {
+    font-size: x-small;
+    color: red;
+    display: none;  
+}
+
+.iconposition a{
+    margin-right: 10px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 15px;
+    height: 15px;
+    accent-color: rgb(245, 171, 34);
+}
+
+input[type=checkbox] {
+    margin-left: 25px;
+    width: 15px;
+    height: 15px;
+    accent-color: rgb(245, 171, 34);
+}
+
+.sub{
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #f7a20e7e;
+    color: black;
+}
+
+.footer{
+    text-align: right;
+    padding: 8px;
+    padding-bottom: 50px;
+    background-color: #302a1fad;
+}
+
+#footerimg{
+    float: left;
+    width: 100px;
+}
+
+.footer a{
+    padding-left: 10px;
+}
+
+/* login */
+
+.login{
+    background-color: #302a1fad;
+    margin: 1% 25% 1% 25%;
+    padding: 5% 10%;
+    box-shadow: inset;
+    border-style:groove;
+}
+
+.guest{
+    background-color: rgba(176, 140, 74, 0.752);
+    border-radius: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 200px;
+}
+.guest:hover{
+    background-color: rgba(176, 140, 74, 0.986);
+}
+.login label{
+    font-weight:lighter;
+    color: rgb(238, 220, 192);
+    font-size: 30px;
+    /* margin-left: 100px; */
+    /* margin: 0% 28%; */
+    padding-bottom: 10%;
+}
+
+.login input{
+    font-size: 27px;
+    background-color: #b28b8b6d;
+    color: rgb(255, 255, 255);
+    padding: 3px 12px;
+    margin-bottom: 10px ;
+    align-items: center;
+    /* margin: 0% 25%; */
+    margin-bottom: 20px;
+}
+.otp{
+    background:#5fbc72ce ;
+    font-size: 20px;
+    /* padding: 10px 20px; */
+    border-radius: 10px;
+    color: wheat;
+    /* margin-left: 62%; */
+    margin-bottom: 30px;
+    
+}
+
+.otp:hover {
+    background-color: #f7a20e7e;
+    color: black;
+}
+.login a{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.441);
+    padding: 0% 2%;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+}
+
+.login a:hover{
+    background-color: rgba(92, 88, 31, 0.671);
+}
+
+/*Menu*/
+
+.table{
+    margin: 2% 10% 5% 5%;
+    padding: 3% 8% 3% 8%;
+    border-style: double;
+    border-color: white;
+    border-width: 5px;    
+    
+}
+
+.pad{
+    text-align: center;
+    padding: 5px 20px;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+}
+
+.table tr{
+    border-bottom: 1px solid white;
+}
