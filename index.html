@@ -17,12 +17,12 @@
 
     <div class="navbar">
         <a href="index.html" class="active">Home</a>
-        <a href="menu.php">Menu</a>
+        <a href="menu.html">Menu</a>
         <a href="review.html">Reviews</a>
         <a href="login.html">Log in</a>
     </div>
     <hr>
-    <form action="connect.php" class="form" method="POST">
+    <form action="" class="form" id="myForm" method="post">
         <div>
             <img src="img\food.jpg" alt="reloading">
         </div>
@@ -34,11 +34,11 @@
         <div>
             <label>Gender :</label><br>
             <div class="sub">
-                <input type="radio" name="Gender" value="MALE" required>
+                <input type="radio" id="Gender" name="Gender" value="MALE" required>
                 <label>Male</label>
-                <input type="radio" name="Gender" value="FEMALE">
+                <input type="radio" id="Gender" name="Gender" value="FEMALE">
                 <label>Female</label>
-                <input type="radio" name="Gender" value="OTHER">
+                <input type="radio" id="Gender" name="Gender" value="OTHER">
                 <label>Other</label>
             </div>
         </div>
@@ -46,13 +46,13 @@
         <div>
             <label>Age :</label><br>
             <div class="sub">
-                <input type="radio" name="Age" value="10-25" required>
+                <input type="radio" id="age" name="Age" value="10-25" required>
                 <label>&lt; 25</label>
-                <input type="radio" name="Age" value="26-35">
+                <input type="radio" id="age" name="Age" value="26-35">
                 <label>26 - 35</label>
-                <input type="radio" name="Age" value="36-60">
+                <input type="radio" id="age" name="Age" value="36-60">
                 <label>36 - 60</label>
-                <input type="radio" name="Age" value="60+">
+                <input type="radio" id="age" name="Age" value="60+">
                 <label>60+</label>
             </div>
         </div>
@@ -68,16 +68,16 @@
 
         <div class="sub">
             <label>What you like the most:</label><br>
-            <input type="checkbox" name="flavour[]" value="Spicy">
+            <input type="checkbox" name="Flavour" value="Spicy">
             <label id="flavour">Spicy</label><br>
-            <input type="checkbox" name="flavour[]" value="MediumSpicy">
+            <input type="checkbox" name="Flavour" value="MediumSpicy">
             <label id="flavour">Medium Spicy</label><br>
-            <input type="checkbox" name="flavour[]" value="LowSpicy">
+            <input type="checkbox" name="Flavour" value="LowSpicy">
             <label id="flavour">Low Spicy</label><br>
-            <input type="checkbox" name="flavour[]" value="Sweet">
+            <input type="checkbox" name="Flavour" value="Sweet">
             <label id="flavour">Sweet</label>
         </div>
-        <input type="submit" value="Submit" class="button">
+        <input type="submit" value="Submit" class="button" onclick="user()">
     </form>
 
     <hr>
