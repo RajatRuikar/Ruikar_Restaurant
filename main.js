@@ -53,6 +53,10 @@ function user() {
     Gender = getSelectedRadioValue("Gender");
     Age = getSelectedRadioValue("Age");
     console.log(Name.value + "  " + Gender + "  " + Age + "  " + ContactNo.value + "  " + flavour.toString());
-
-    window.location ="thanks.html"
+    if(Name.value == "" || Gender == undefined || Age == undefined || ContactNo == ""){
+        alert('Please fill all the fields');
+    }
+    else{
+        window.location ="thanks.html"   
+    }
 }
