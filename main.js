@@ -1,40 +1,8 @@
 let Name, Gender, Age, ContactNo;
-let flavour = [];
+let flavour;
 Name = document.getElementById("Name");
-Gender = document.querySelector('input[name="Gender"]:checked').value;
-Age = document.querySelector('input[name="Age"]:checked').value;
 ContactNo = document.getElementById("ContactNo");
-let checkbox = document.querySelectorAll('input[name="flavour"]:checked');
-
-for (var i = 0; i < checkbox.length; i++) {
-    flavour.push(checkbox[i].value);
-}
-function fun() {
-
-    // IMP contact no. validation DON'T remove
-    let val = validationcall(ContactNo.value);
-    if (val) {
-        return;
-    }
-
-    // Value Checker on console
-    // console.log(Name.value + Gender + Age + ContactNo.value + flavour.toString());
-    // sendValueToPhp(Name.value,Gender,Age,ContactNo.value,flavour.toString()); 
-    flavour = [];
-}
-// send data JS to PHP
-// function sendValueToPhp(Name,Gender,Age,ContactNo,flavour){
-//     var data = {
-//         NAME: Name,
-//         GENDER: Gender,
-//         AGE: Age,
-//         CONTACTNO: ContactNo,
-//         FLAVOUR: flavour
-//     };
-//     document.cookie = "cname="+data;
-//     $.post("connect.php", data);
-// }
-
+var selectedValues = [];
 // IMP contact no. validation DON'T remove
 function verfiy() {
     let val = validationcall(document.getElementById("ContactNo").value);
@@ -55,6 +23,36 @@ function validationcall(value) {
     }
 }
 
-function user(){
+var form = document.getElementById("myForm");
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+});
 
+function getSelectedRadioValue(groupName) {
+    var radioButtons = document.getElementsByName(groupName);
+
+    for (var i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+            return radioButtons[i].value;
+        }
+    }
+}
+
+let checkbox = document.getElementsByName("Flavour");
+
+function user() {
+
+    for (var i = 0; i < checkbox.length; i++) {
+        if (checkbox[i].checked) {
+            selectedValues.push(checkbox[i].value);
+        }
+
+    }
+    checkbox = [];
+    flavour = selectedValues.join(", ");
+    Gender = getSelectedRadioValue("Gender");
+    Age = getSelectedRadioValue("Age");
+    console.log(Name.value + "  " + Gender + "  " + Age + "  " + ContactNo.value + "  " + flavour.toString());
+
+    window.location ="thanks.html"
 }
