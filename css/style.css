@@ -253,3 +253,11 @@ input[type=checkbox] {
 .table tr{
     border-bottom: 1px solid white;
 }
+
+h6{
+    margin: 0px 100px 0px 0px;
+}
+
+h5{
+    margin: 0px 100px 0px 0px;
+}

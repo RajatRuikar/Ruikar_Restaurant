@@ -27,13 +27,13 @@ body {
 
 .Heading :hover {
     color: rgb(255, 255, 255);
-    
+
 }
 
 .navbar {
     margin: 10px 2px;
     overflow: hidden;
-    background-color:rgba(0, 0, 0, 0.44) ;
+    background-color: rgba(0, 0, 0, 0.44);
     color: #f2f2f2;
     text-align: center;
     padding: 8px 25px;
@@ -42,12 +42,12 @@ body {
     font-size: 20px;
 }
 
-.navbar a{
+.navbar a {
     padding: 20px;
     font-size: 26px;
 }
 
-.navbar .active{
+.navbar .active {
     background-color: #d883039c;
     color: rgba(0, 0, 0, 0.742);
     border-radius: 15px;
@@ -59,14 +59,14 @@ body {
     border-radius: 15px;
 }
 
-.button{
+.button {
     background-color: #b28b8b6d;
     color: rgb(255, 255, 255);
     padding: 3px 12px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     font-size: 30px;
     margin-top: 10px;
-    align-items:center;
+    align-items: center;
 }
 
 .button:hover {
@@ -89,7 +89,7 @@ body {
 .footer a {
     padding-left: 10px;
 }
-    
+
 
 .icon {
     size: 10px;
@@ -148,7 +148,7 @@ form div img:hover {
     align-items: center;
 }
 
-.otp_page div a{
+.otp_page div a {
     color: white;
     background-color: rgba(128, 128, 128, 0.441);
     padding: 0% 1%;
@@ -157,6 +157,6 @@ form div img:hover {
     margin-right: 25%;
 }
 
-.otp_page div a:hover{
+.otp_page div a:hover {
     background-color: rgba(92, 88, 31, 0.671);
 }
