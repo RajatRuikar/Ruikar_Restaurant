@@ -9,6 +9,10 @@ body {
     background-position: 50% 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 *{
     color: rgb(249, 239, 226);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
